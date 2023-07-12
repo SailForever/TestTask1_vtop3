@@ -14,6 +14,9 @@
   <div class="header">
     <div class="menu_header">
       <div class="top_header">
+        <div class="hamburger">
+          <div class="svg_hamburger" onclick=showHamburger()></div>
+        </div>
         <div class="logo_header">
           <div class="logo_text_header">
             <a class="logo_a_header" href="#" title="Logo"></a>
@@ -21,19 +24,42 @@
         </div>
         <div class="mobile_header">
           <div class="phone_header">
-            <span class="phoneSvg_header"></span>
+            <span class="phoneSvg_header"><a href="tel:+375292577007"></a></span>
             <a href="tel:+375292577007">+375 (29) 257-70-07</a>
           </div>
           <div class="email_header">
-            <span class="emailSvg_header"></span>
+            <span class="emailSvg_header"><a href="mailto:3577007by@gmail.com"></a></span>
             <a href="mailto:3577007by@gmail.com">3577007by@gmail.com</a>
           </div>
           <div class="lang_header">
-            <span>RU</span>
+            <span class="langRu_header">RU</span>
             <span class="ruFlagSvg_header"></span>
             <span class="polygonSvg_header"></span>
           </div>
         </div>
+      </div>
+      <div class="block_hamburger1" style="display: none;">
+        <div class="block1_hamburger" onclick=showHamburger1()>Продвижение сайтов (SEO)<span
+            class="polygonSvg2_header"></span></div>
+        <div class="block2_hamburger">Контекстная реклама</div>
+        <div class="block3_hamburger">Создание сайтов</div>
+        <div class="block4_hamburger">Медийная реклама</div>
+        <div class="block5_hamburger">Разработка дизайна</div>
+        <div class="block6_hamburger">Продвижение в соц. сетях (SMM)</div>
+        <div class="block7_hamburger">Портфолио</div>
+        <div class="block8_hamburger">О компании</div>
+      </div>
+      <div class="block_hamburger2" style="display: none;">
+        <div class="block1_hamburger2">
+          <div class="back_hamburger2" onclick=showBack1()></div>
+          <div class="cross_hamburger2" onclick=showAway1()></div>
+          <div>Продвижение сайтов (SEO)</div>
+        </div>
+        <a href="#">Продвижение по позициям</a>
+        <a href="#">Продвижение по лидам</a>
+        <a href="#">Продвижение по трафику</a>
+        <a href="#">Продвижение сайтов в Google</a>
+        <a href="#">Продвижение сайтов в Яндекс</a>
       </div>
       <div class="down_header">
         <div class="block1_header">
@@ -614,6 +640,7 @@
   <script src="JS/isInViewport.min.js"></script>
   <script src="JS/video.js"></script>
   <script src="JS/showNumber.js"></script>
+  <script src="JS/hamburger.js"></script>
 </body>
 
 </html>
