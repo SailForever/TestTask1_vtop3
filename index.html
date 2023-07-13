@@ -283,13 +283,13 @@
       <div class="topFeedText2_feedback">владельцев бизнеса</div>
     </div>
     <div class="namesBlock_feedback">
-      <div class="namesBlock1_feedback">
+      <spanSlide class="namesBlock1_feedback">
         <div class="textBlock1_1_feedback">
           <div class="borderLogoName1_feedback">
             <div class="logoName1_feedback"></div>
           </div>
           <div class="name1_feedback">
-            <div class="nameTop1_feedback">Иванов Иван Иванович</div>
+            <div class="nameTop1_feedback">Slide1 Иванов Иван Иванович</div>
             <div class="nameDown1_feedback">Генеральный директор<br>ООО”Бакстройинвест»</div>
           </div>
         </div>
@@ -306,14 +306,14 @@
             frameborder="0" allowfullscreen>
           </iframe>
         </div>
-      </div>
-      <div class="namesBlock2_feedback">
+      </spanSlide>
+      <spanSlide class="namesBlock2_feedback">
         <div class="textBlock1_2_feedback">
           <div class="borderLogoName2_feedback">
             <div class="logoName2_feedback"></div>
           </div>
           <div class="name2_feedback">
-            <div class="nameTop2_feedback">Иванов Иван Иванович</div>
+            <div class="nameTop2_feedback">Slide2 Иванов Иван Иванович</div>
             <div class="nameDown2_feedback">Генеральный директор<br>ООО”Бакстройинвест»</div>
           </div>
         </div>
@@ -330,14 +330,14 @@
             frameborder="0" allowfullscreen>
           </iframe>
         </div>
-      </div>
-      <div class="namesBlock3_feedback">
+      </spanSlide>
+      <spanSlide class="namesBlock3_feedback">
         <div class="textBlock1_3_feedback">
           <div class="borderLogoName3_feedback">
             <div class="logoName3_feedback"></div>
           </div>
           <div class="name3_feedback">
-            <div class="nameTop3_feedback">Иванов Иван Иванович</div>
+            <div class="nameTop3_feedback">Slide3 Иванов Иван Иванович</div>
             <div class="nameDown3_feedback">Генеральный директор<br>ООО”Бакстройинвест»</div>
           </div>
         </div>
@@ -354,14 +354,14 @@
             frameborder="0" allowfullscreen>
           </iframe>
         </div>
-      </div>
-      <div class="namesBlock4_feedback">
+      </spanSlide>
+      <spanSlide class="namesBlock4_feedback">
         <div class="textBlock1_4_feedback">
           <div class="borderLogoName4_feedback">
             <div class="logoName4_feedback"></div>
           </div>
           <div class="name4_feedback">
-            <div class="nameTop4_feedback">Иванов Иван Иванович</div>
+            <div class="nameTop4_feedback">Slide4 Иванов Иван Иванович</div>
             <div class="nameDown4_feedback">Генеральный директор<br>ООО”Бакстройинвест»</div>
           </div>
         </div>
@@ -378,8 +378,10 @@
             frameborder="0" allowfullscreen>
           </iframe>
         </div>
-      </div>
+      </spanSlide>
     </div>
+    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
     <div class="downText_feedback">Для нас <b>хороший логотип</b> - тот, который принял заказчик. Мы знаем, что вы, как
       никто другой, заинтересованы в успешном результате и хотите, чтобы Ваша компания имела свое собственное
       запоминающееся лицо.
@@ -447,8 +449,11 @@
   </div>
   <div class="deadline">
     <div class="leftBlock_deadline">
-      <div class="leftText1_deadline">СРОК</div>
-      <div class="leftText2_deadline">РАЗРАБОТКИ</div>
+      <div class="textMob_deadline"><div class="leftText1_deadline">СРОК</div>
+      <div class="leftText2_deadline">РАЗРАБОТКИ</div></div>
+      <div class="rightBlockMob_deadline">
+        <div class="borderBlockMob_deadline">ДО <span>10</span> ДНЕЙ</div>
+      </div>
       <div class="leftText3_deadline">Именно столько в среднем занимает разработка логотипа. Мы не делаем работу
         бесконечно долго, делая все новые и новые итерации.</div>
     </div>
@@ -505,11 +510,23 @@
   <div class="partners">
     <div class="textBlock1_partners">МЫ ЯВЛЯЕМСЯ<br><span>СЕРТИФИЦИРОВАННЫМИ ПАРТНЕРАМИ</span></div>
     <div class="imgBlock1_partners">
-      <img src="Images/partner1.png" />
-      <img src="Images/partner2.png" />
+      <img class="imG" src="Images/partner1.png" />
+      <img class="imG1" src="Images/partner2.png" />
     </div>
     <div class="textBlock2_partners">НАШИ КЛИЕНТЫ</div>
     <div class="imgBlock2_partners">
+      <div class="imagesMob_partners">
+        <img src="Images/p1.png" />
+        <img src="Images/p2.png" />
+        <img src="Images/p3.png" />
+        <img src="Images/p4.png" />
+        <img src="Images/p5.png" />
+        <img src="Images/p6.png" />
+        <img src="Images/p7.png" />
+        <img src="Images/p8.png" />
+        <img src="Images/p9.png" />
+        <img src="Images/p10.png" />
+      </div>
       <div class="imgTopBl_partners">
         <img src="Images/p1.png" />
         <img src="Images/p2.png" />
@@ -524,7 +541,10 @@
         <img src="Images/p9.png" />
         <img src="Images/p10.png" />
       </div>
+      <button class="prev-button1" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+      <button class="next-button1" aria-label="Посмотреть следующий слайд">&gt</button>
     </div>
+
   </div>
   <div class="other">
     <div class="topBlock_other">А ЕЩЁ<br><span>мы можем оказать другие услуги:</span></div>
@@ -636,6 +656,20 @@
             <a href="#"><img src="Images/Raschet.png" /></a>
           </div>
         </div>
+        <div class="blockMob_footer">
+          <div class="blockMob_img1_footer">
+            <a href="#"><img src="Images/MasterCard_img.png" /></a>
+            <a href="#"><img src="Images/Visa_img.png" /></a>
+            <a href="#"><img src="Images/VerifiedVisa_img.png" /></a>
+            <a href="#"><img src="Images/webpay_img.png" /></a>
+          </div>
+          <div class="blockMob_img2_footer">
+            <a href="#"><img src="Images/Belkart.png" /></a>
+            <a href="#"><img src="Images/Belkart1.png" /></a>
+            <a href="#"><img src="Images/Master.png" /></a>
+            <a href="#"><img src="Images/Raschet.png" /></a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="downBlock_footer">© 2023 VTOP3</div>
@@ -644,6 +678,7 @@
   <script src="JS/video.js"></script>
   <script src="JS/showNumber.js"></script>
   <script src="JS/hamburger.js"></script>
+  <script src="JS/slider.js"></script>
 </body>
 
 </html>
