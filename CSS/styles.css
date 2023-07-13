@@ -16,7 +16,15 @@ a:hover {
 
 /*hamb*/
 .block_hamburger1,
-.block_hamburger2 {
+.block_hamburger2,
+.block_hamburger3,
+.block_hamburger3_1,
+.block_hamburger4,
+.block_hamburger4_1,
+.block_hamburger5,
+.block_hamburger5_1,
+.block_hamburger5_2,
+.block_hamburger6 {
   grid-template-columns: 90%;
   justify-content: space-around;
   background-color: #4D3F75;
@@ -35,7 +43,15 @@ a:hover {
   border-radius: 0 0 29px 30px;
 }
 
-.block1_hamburger2 {
+.block1_hamburger2,
+.block1_hamburger3,
+.block1_hamburger3_1,
+.block1_hamburger4,
+.block1_hamburger4_1,
+.block1_hamburger5,
+.block1_hamburger5_1,
+.block1_hamburger5_2,
+.block1_hamburger6 {
   display: flex;
   flex-direction: row;
   grid-gap: 10px;
@@ -49,19 +65,27 @@ a:hover {
   align-items: center;
 }
 
-.block_hamburger2 a {
+.block_hamburger2 a,
+.block_hamburger3 a,
+.block_hamburger3_1 a,
+.block_hamburger4 a,
+.block_hamburger4_1 a,
+.block_hamburger5 a,
+.block_hamburger5_1 a,
+.block_hamburger5_2 a,
+.block_hamburger6 a {
   font-size: 12px;
   text-decoration: none;
   color: white
 }
 
-.back_hamburger2 {
+.back_hamburger {
   width: 30px;
   height: 30px;
   background-image: url(../Images/icon_back.png);
 }
 
-.cross_hamburger2 {
+.cross_hamburger {
   width: 30px;
   height: 30px;
   background-image: url(../Images/icon_cross.png);
