@@ -56,19 +56,52 @@ const slides1 = Array.from(slider1.querySelectorAll('img'));
 const slideCount1 = slides1.length;
 let slideIndex1 = 0;
 
+let slideIndex2 = 0;
+let slideIndexNext2=1;
+
 let size1 = window.innerWidth
-if (size1 < 1400) {
+if (size1 <= 699) {
+  slider1.style='display: grid; grid-template-rows: 100px;';
   prevButton1.addEventListener('click', showPreviousSlide1);
   nextButton1.addEventListener('click', showNextSlide1);
   updateSlider1();
 }
+else {
+  if(size1 >= 700 && size1 <= 1400 ){
+    slider1.style='display: grid; grid-template-columns: 200px 200px; grid-gap: 5%; grid-template-rows: 115px;';
+    prevButton1.addEventListener('click', showPreviousSlide2);
+    nextButton1.addEventListener('click', showNextSlide2);
+    updateSlider2();
+  }
+  if(size1 >= 1401){
+    slider1.style='display: none'
+  }
+}
 
 window.addEventListener('resize', function () {
   let resize1 = window.innerWidth
-  if (resize1 < 1400) {
+  if (resize1 <= 699) {
+    slider1.style='display: grid; grid-template-rows: 100px;';
+    prevButton1.removeEventListener('click', showPreviousSlide2);
+    nextButton1.removeEventListener('click', showNextSlide2);
     prevButton1.addEventListener('click', showPreviousSlide1);
     nextButton1.addEventListener('click', showNextSlide1);
     updateSlider1();
+  }
+  else {
+    if(resize1 >= 700 && resize1 <= 1400 ){
+      slider1.style='display: grid; grid-template-columns: 200px 200px; grid-gap: 5%; grid-template-rows: 115px;';
+      prevButton1.removeEventListener('click', showPreviousSlide1);
+      nextButton1.removeEventListener('click', showNextSlide1);
+      prevButton1.addEventListener('click', showPreviousSlide2);
+      nextButton1.addEventListener('click', showNextSlide2);
+      updateSlider2();
+    }
+    else {
+      if(resize1 >=1401){
+        slider1.style='display: none';
+      }
+    }
   }
 });
 
@@ -94,4 +127,31 @@ function updateSlider1() {
     }
   });
 }
-updateSlider1();
+
+/*slides on 2 images*/
+// Функция для показа предыдущего слайда
+// Функция для показа предыдущего слайда
+function showPreviousSlide2() {
+  slideIndex2 = (slideIndex2 - 2 + slideCount1) % slideCount1;
+  slideIndexNext2 = (slideIndexNext2 - 2 + slideCount1) % slideCount1;
+  updateSlider2();
+}
+
+// Функция для показа следующего слайда
+function showNextSlide2() {
+  slideIndex2 = (slideIndex2 + 2) % slideCount1;
+  slideIndexNext2 = (slideIndexNext2 + 2) % slideCount1;
+  updateSlider2();
+}
+
+// Функция для обновления отображения слайдера
+function updateSlider2() {
+  slides1.forEach((slide, index) => {
+    if (index === slideIndex2 || index === slideIndexNext2) {
+      slide.style.display = 'block';
+    } 
+    else {
+      slide.style.display = 'none';
+    }
+  });
+}

@@ -1,3 +1,24 @@
+/*header*/
+
+const textHead = document.querySelector('.showNumber_header');
+const numberHead = document.querySelector('.number_header');
+const textHeadEm = document.querySelector('.showEmail_header');
+const numberHeadEm = document.querySelector('.email_headerTop');
+
+
+function showNumberHead() {
+  numberHead.style.display = 'flex';
+  textHead.style.display = 'none';
+}
+
+function showEmailHead() {
+  numberHeadEm.style.display = 'flex';
+  textHeadEm.style.display = 'none';
+}
+
+
+/*footer*/
+
 const text = document.querySelector('.showNumber_footer');
 const number = document.querySelector('.number_footer');
 const number1 = document.querySelector('.number_footer1');

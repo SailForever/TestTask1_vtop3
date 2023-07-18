@@ -25,11 +25,15 @@
         <div class="mobile_header">
           <div class="phone_header">
             <span class="phoneSvg_header"><a href="tel:+375292577007"></a></span>
-            <a href="tel:+375292577007">+375 (29) 257-70-07</a>
+            <span class="showNumber_header" onclick=showNumberHead()>+375<span class="shr_header">показать
+                номер</span><span class="polygonSvg_header2"></span></span>
+            <a href="tel:+375293577007" style="display: none;" class="number_header">+375 (29) 357-70-07</a>
           </div>
           <div class="email_header">
             <span class="emailSvg_header"><a href="mailto:3577007by@gmail.com"></a></span>
-            <a href="mailto:3577007by@gmail.com">3577007by@gmail.com</a>
+            <span class="showEmail_header" onclick=showEmailHead()><span class="shr_header">показать e-mail</span><span
+                class="polygonSvg_header2"></span></span>
+            <a href="email:3577007by@gmail.com" style="display: none;" class="email_headerTop">3577007by@gmail.com</a>
           </div>
           <div class="lang_header">
             <span class="langRu_header">RU</span>
@@ -306,7 +310,7 @@
         <span class="text3Left_header">ЛОГОТИПОВ</span>
         <span class="text4Left_header">От стартапов, до крупного бизнеса<br>Мы знаем как сделать, чтобы вас
           заметили</span>
-        <a href="#" class="text5Left_header">Разработать логотип</a>
+        <a onclick=openModal() class="text5Left_header">Разработать логотип</a>
       </div>
       <div class="rightSlide_header">
         <div class="ballRight_header"></div>
@@ -385,24 +389,24 @@
           </div>
         </div>
       </div>
-      <a href="#" class="button_casesMob">Смотреть еще</a>
+      <a href="https://vtop3.by/portfolio" target="_blank" class="button_casesMob">Смотреть еще</a>
       <div class="textRightBlock_cases">
         <div class="fixTextRightBlock_cases">
           <div class="text1Right_cases">Наши клиенты получили более</div>
           <div class="cases_Mob">
             <div class="text2Right_cases">1 МЛН.</div>
-            <div class="text3Right_cases">ЗАЯВОК</div>
+            <div class="text3Right_cases">&nbsp;ЗАЯВОК</div>
           </div>
-          <div class="text4Right_cases">и смогли<br>заработать более</div>
+          <div class="text4Right_cases">и смогли заработать более</div>
           <div class="cases_Mob">
             <div class="text5Right_cases">9 МЛРД.</div>
-            <div class="text6Right_cases">РУБЛЕЙ</div>
+            <div class="text6Right_cases">&nbsp;РУБЛЕЙ</div>
           </div>
-          <a href="#" class="text7Right_cases">Хочу заработать</a>
+          <a onclick=openModal() class="text7Right_cases">Хочу заработать</a>
         </div>
       </div>
     </div>
-    <a href="#" class="button_cases">Смотреть еще</a>
+    <a href="https://vtop3.by/portfolio" target="_blank" class="button_cases">Смотреть еще</a>
   </div>
   <div class="feedback">
     <div class="topFeed_feedback">
@@ -507,13 +511,17 @@
         </div>
       </spanSlide>
     </div>
-    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+    <div class="prev-button">
+      <img src="SVG/chevron_left.svg">
+    </div>
+    <div class="next-button">
+      <img src="SVG/chevron_right.svg">
+    </div>
     <div class="downText_feedback">Для нас <b>хороший логотип</b> - тот, который принял заказчик. Мы знаем, что вы, как
       никто другой, заинтересованы в успешном результате и хотите, чтобы Ваша компания имела свое собственное
       запоминающееся лицо.
     </div>
-    <a href="#" class="button_feedback">Разработать логотип</a>
+    <a onclick=openModal() class="button_feedback">Разработать логотип</a>
   </div>
   <div class="price">
     <div class="textBlock_price">
@@ -532,10 +540,10 @@
           </div>
         </div>
         <div class="itemText3_price">
-          <div class="text1Price_price">6000<span>руб</span></div>
+          <div class="text1Price_price">6000 <span> руб</span></div>
         </div>
         <div class="itemText4_price">
-          <a href="#" class="button_price">Выбрать пакет</a>
+          <a onclick=openModal() class="button_price">Выбрать пакет</a>
         </div>
       </div>
       <div class="itemBlock2_price">
@@ -549,10 +557,10 @@
           </div>
         </div>
         <div class="itemText3_price">
-          <div class="text1Price_price">9000<span>руб</span></div>
+          <div class="text1Price_price">9000 <span> руб</span></div>
         </div>
         <div class="itemText4_price">
-          <a href="#" class="button_price">Выбрать пакет</a>
+          <a onclick=openModal() class="button_price">Выбрать пакет</a>
         </div>
       </div>
       <div class="itemBlock3_price">
@@ -566,10 +574,10 @@
           </div>
         </div>
         <div class="itemText3_price">
-          <div class="text1Price_price">14500<span>руб</span></div>
+          <div class="text1Price_price">14500 <span> руб</span></div>
         </div>
         <div class="itemText4_price">
-          <a href="#" class="button_price">Выбрать пакет</a>
+          <a onclick=openModal() class="button_price">Выбрать пакет</a>
         </div>
       </div>
     </div>
@@ -625,21 +633,42 @@
   <div class="vidLogo">
     <div class="leftBlock_vidLogo">
       <div class="leftText1_vidLogo">ПРОЦЕСС СОЗДАНИЯ<br>ЛОГОТИПА</div>
-      <div class="leftText2_vidLogo">1 ШАГ - ЗАЯВКА НА ЛОГОТИП</div>
-      <div class="leftText3_vidLogo">Вы оставляете заявку на разработку</div>
-      <div class="leftText4_vidLogo">Позвоните нам или оставьте заявку на сайте, чтобы начать приятное сотрудничество.
+      <div class="scrollFull_vidLogo">
+        <div class="scrollBlock_vidLogo">
+          <div class="leftText2first_vidLogo">1 ШАГ - ЗАЯВКА НА ЛОГОТИП</div>
+          <div class="leftText3_vidLogo">Вы оставляете заявку на разработку</div>
+          <div class="leftText4_vidLogo">Позвоните нам или оставьте заявку на сайте, чтобы начать приятное
+            сотрудничество.</div>
+          <div class="leftText2_vidLogo">2 ШАГ - ВЫЯСНЕНИЕ ПОТРЕБНОСТЕЙ</div>
+          <div class="leftText3_vidLogo">Мы узнаем Ваши вкусы</div>
+          <div class="leftText4_vidLogo">Наши опытные дизайнеры не только хорошо рисуют, но и отлично умеют понимать что
+            нравится заказчику. Поэтому готовая работа - это именно то, что вы просили.</div>
+          <div class="leftText2_vidLogo">3 ШАГ - РАЗРАБОТКА ВАРИАНТОВ</div>
+          <div class="leftText3_vidLogo">Разрабатываем 2-3 черновых варианта</div>
+          <div class="leftText4_vidLogo">Чтобы точно определиться какой логотип нужен мы занимаемся разработкой сразу
+            нескольких вариантов в совершенно разных концепциях.</div>
+          <div class="leftText2_vidLogo">4 ШАГ - РАБОТА НАД ВАРИАНТОМ</div>
+          <div class="leftText3_vidLogo">Делаем ваш логотип неповторимым</div>
+          <div class="leftText4_vidLogo"> Из выбранной концепции мы создаем именно то, что подойдет вашей компании и,
+            конечно, понравится Вам.</div>
+          <div class="leftText2_vidLogo">5 ШАГ - ГОТОВЫЙ ЛОГОТИП </div>
+          <div class="leftText3_vidLogo">Передаем логотип Вам</div>
+          <div class="leftText4_vidLogo">После всех согласований мы передаем готовый логотип в векторном формате, что
+            позволит использовать его где угодно.</div>
+        </div>
       </div>
     </div>
     <div class="rightBlock_vidLogo">
       <video class="video" muted playsinline>
-        <source src="Video/Video.mp4" type="video/mp4"/>
+        <source src="Video/Video.mp4" type="video/mp4" />
       </video>
     </div>
   </div>
   <div class="partners">
     <div class="textBlock1_partners">МЫ ЯВЛЯЕМСЯ<br><span>СЕРТИФИЦИРОВАННЫМИ ПАРТНЕРАМИ</span></div>
     <div class="imgBlock1_partners">
-      <img class="imG" src="Images/partner1.png" />
+      <a href="https://www.google.com/partners/agency?id=2851488653" target="_blank"><img class="imG"
+          src="Images/partner1.png" /></a>
       <img class="imG1" src="Images/partner2.png" />
     </div>
     <div class="textBlock2_partners">НАШИ КЛИЕНТЫ</div>
@@ -670,8 +699,12 @@
         <img src="Images/p9.png" />
         <img src="Images/p10.png" />
       </div>
-      <button class="prev-button1" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-      <button class="next-button1" aria-label="Посмотреть следующий слайд">&gt</button>
+      <div class="prev-button1">
+        <img src="SVG/chevron_left.svg">
+      </div>
+      <div class="next-button1">
+        <img src="SVG/chevron_right.svg">
+      </div>
     </div>
 
   </div>
@@ -679,16 +712,16 @@
     <div class="topBlock_other">А ЕЩЁ<br><span>мы можем оказать другие услуги:</span></div>
     <div class="downBlock_other">
       <div class="blockText1_other">
-        <div class="Text1_other">Нейминг</div>
+        <div class="Text1_other">Нейминг<span class="ndash_other">&nbsp;&ndash;</span></div>
         <div class="Text2_other">Создание названия для компании, бренда, товара, мероприятия и др.</div>
       </div>
       <div class="blockText1_other">
-        <div class="Text1_other">Создание фирменного стиля </div>
+        <div class="Text1_other">Создание фирменного стиля<span class="ndash_other">&nbsp;&ndash;</span></div>
         <div class="Text2_other">Разработка дизайна визиток, фирменных бланков, ручек, чашек и другой сувенирной
           продукции</div>
       </div>
       <div class="blockText1_other">
-        <div class="Text1_other">Разработка сайтов </div>
+        <div class="Text1_other">Разработка сайтов<span class="ndash_other">&nbsp;&ndash;</span></div>
         <div class="Text2_other">Делаем работы по созданию web-дизайна, верстке, продвижению</div>
       </div>
     </div>
@@ -727,13 +760,15 @@
     <div class="topBlock_footer">
       <div class="block1_footer">
         <div class="block1_t1_footer">ЧКУП "Агентство рекламы и<br>веб-разработки ВТОП3"</div>
-        <div class="block1_t2_footer">Свидетельство №192826921 от 06.04.2020г.<br>зарегистрировано Минским горисполкомом
+        <div class="block1_t2_footer">Свидетельство №192826921 от 06.04.2020г. зарегистрировано Минским горисполкомом
         </div>
         <div class="block1_t3_footer">УНП 192826921<br>ОКПО 504044705000</div>
         <div class="block1_t4_footer"><a href="#">Публичный договор (публичная оферта)<br>Политика
             конфиденциальности<br>Условия оказания услуг</a></div>
         <div class="block1_t5_footer">Оценка качества</div>
-        <div class="block1_t6_footer">Средняя оценка клиентов<br>Всего отзывов</div>
+        <div class="block1_t6_footer">Средняя оценка клиентов<span class="subtrack_footer"></span>
+          <div class="textOtz_footer"><span>Всего отзывов</span><span class="subtrack2_footer"></div></span>
+        </div>
       </div>
       <div class="block2_footer">
         <div class="block2_t1_footer">Пн-Пт</div>
@@ -803,11 +838,36 @@
     </div>
     <div class="downBlock_footer">© 2023 VTOP3</div>
   </div>
+  <div id="openModal" class="modalFull">
+    <div class="modal">
+      <button onclick=closeModal() class="cross_modal"></button>
+      <div class="text_modal">Будем рады помочь</div>
+      <form class="form_modal">
+        <div class="name_modal">
+          <label class="label1_modal">Ваше имя</label>
+          <input class="inp1_modal" type=text>
+        </div>
+        <div class="tel_modal">
+          <label class="label2_modal">Телефон</label>
+          <input class="inp2_modal" type=text>
+        </div>
+        <span class="checkFull_modal"><input class="checkInp_modal" type="checkbox"><label class="check_modal"
+            for="checkInp_modal">Нажимая кнопку отправить заявку, даю согласие на обработку <a href="#">персональных
+              данных*</a></label>
+        </span>
+        <div class="submitFull_modal">
+          <input class="submit_modal" type="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="JS/isInViewport.min.js"></script>
   <script src="JS/video.js"></script>
   <script src="JS/showNumber.js"></script>
   <script src="JS/hamburger.js"></script>
   <script src="JS/slider.js"></script>
+  <script src="JS/modal.js"></script>
 </body>
 
 </html>
