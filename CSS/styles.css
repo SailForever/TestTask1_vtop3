@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&display=swap');
 
 body {
   margin: 0;
@@ -772,6 +773,106 @@ a:hover {
   grid-gap: 4%;
 }
 
+.imgLeft1Block_cases,
+.imgRight1_cases,
+.imgRight2_cases,
+.imgLeft1_cases,
+.imgLeft2_cases,
+.imgRight2Block_cases,
+.imgRightR1_cases,
+.imgRightR2_cases,
+.rightImgBlock2_cases,
+.imgRight3_cases,
+.imgRight4_cases {
+  position: relative;
+}
+
+.windowImg1_cases,
+.windowImg2_cases,
+.windowImg3_cases,
+.windowImg4_cases,
+.windowImg5_cases,
+.windowImg6_cases,
+.windowImg7_cases,
+.windowImg8_cases,
+.windowImg9_cases,
+.windowImg10_cases,
+.windowImg11_cases {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  font-weight: 700;
+  align-items: flex-end;
+  color: black;
+  text-decoration: none;
+}
+
+.windowImg1_cases span,
+.windowImg2_cases span,
+.windowImg3_cases span,
+.windowImg4_cases span,
+.windowImg5_cases span,
+.windowImg6_cases span,
+.windowImg7_cases span,
+.windowImg8_cases span,
+.windowImg9_cases span,
+.windowImg10_cases span,
+.windowImg11_cases span {
+  padding-left: 20px;
+  padding-bottom: 40px;
+  padding-right: 5px;
+}
+
+.windowImg2_cases span,
+.windowImg3_cases span,
+.windowImg4_cases span,
+.windowImg5_cases span,
+.windowImg7_cases span,
+.windowImg8_cases span,
+.windowImg10_cases span,
+.windowImg11_cases span {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 5px;
+}
+
+.windowImg1_cases,
+.windowImg2_cases,
+.windowImg3_cases,
+.windowImg4_cases,
+.windowImg5_cases,
+.windowImg6_cases,
+.windowImg7_cases,
+.windowImg8_cases,
+.windowImg9_cases,
+.windowImg10_cases,
+.windowImg11_cases {
+  display: none;
+}
+
+.imgLeft1Block_cases:hover .windowImg1_cases,
+.imgRight1_cases:hover .windowImg2_cases,
+.imgRight2_cases:hover .windowImg3_cases,
+.imgLeft1_cases:hover .windowImg4_cases,
+.imgLeft2_cases:hover .windowImg5_cases,
+.imgRight2Block_cases:hover .windowImg6_cases,
+.imgRightR1_cases:hover .windowImg7_cases,
+.imgRightR2_cases:hover .windowImg8_cases,
+.rightImgBlock2_cases:hover .windowImg9_cases,
+.imgRight3_cases:hover .windowImg10_cases,
+.imgRight4_cases:hover .windowImg11_cases {
+  display: flex;
+}
+
+
+
+
+
 .imgRight1Block_cases {
   display: grid;
   grid-gap: 4%;
@@ -1315,31 +1416,69 @@ a:hover {
   z-index: 1;
 }
 
-.scrollFull_vidLogo {
-  overflow: hidden;
+
+
+.slider_vidlogo {
+  position: relative;
 }
 
-.scrollBlock_vidLogo {
-  height: 190px;
-  overflow-y: scroll;
-  padding-right: 17px;
+.slide1_vidlogo,
+.slide2_vidlogo,
+.slide3_vidlogo,
+.slide4_vidlogo,
+.slide5_vidlogo {
+  position: absolute;
+  animation: round 35s infinite;
+  opacity: 0;
+  width: 100%;
 }
 
-.scrollBlock_vidLogo::-webkit-scrollbar {
-  width: 0;
+@keyframes round {
+  5% {
+    opacity: 1
+  }
+
+  30% {
+    opacity: 0
+  }
 }
+
+.slide5_vidlogo {
+  animation-delay: 28s
+}
+
+.slide4_vidlogo {
+  animation-delay: 21s
+}
+
+.slide3_vidlogo {
+  animation-delay: 14s
+}
+
+.slide2_vidlogo {
+  animation-delay: 7s
+}
+
+.slide1_vidlogo {
+  animation-delay: 0s
+}
+
+
 
 .leftBlock_vidLogo {
   grid-gap: 30px;
   width: 50%;
   display: grid;
   align-content: center;
+  grid-template-rows: 50fr 50fr;
 }
 
 .leftText1_vidLogo {
   font-size: 70px;
   font-weight: 700;
   color: #F3BC28;
+  display: flex;
+  align-items: flex-end;
 }
 
 .leftText2first_vidLogo {
@@ -1352,21 +1491,20 @@ a:hover {
   font-size: 32px;
   font-weight: 700;
   color: white;
-  margin-top: 30px;
 }
 
 .leftText3_vidLogo {
   font-size: 32px;
   font-weight: 700;
   color: #F3BC28;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .leftText4_vidLogo {
   font-size: 24px;
   font-weight: 400;
   color: white;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .rightBlock_vidLogo {
@@ -1444,12 +1582,76 @@ a:hover {
   grid-gap: 80px;
 }
 
-.imgTopBl_partners img,
-.imgDownBl_partners img {
+.block1Img_partners,
+.block2Img_partners,
+.block3Img_partners,
+.block4Img_partners,
+.block5Img_partners,
+.block6Img_partners,
+.block7Img_partners,
+.block8Img_partners,
+.block9Img_partners,
+.block10Img_partners {
   width: 20%;
+}
+
+.block1Img_partners img,
+.block2Img_partners img,
+.block3Img_partners img,
+.block4Img_partners img,
+.block5Img_partners img,
+.block6Img_partners img,
+.block7Img_partners img,
+.block8Img_partners img,
+.block9Img_partners img,
+.block10Img_partners img {
+  width: 100%;
+  height: 100%;
   max-height: 100px;
   object-fit: contain;
 }
+
+.block1Img_partners:hover [src^="Images/p1.png"],
+.block2Img_partners:hover [src^="Images/p2.png"],
+.block3Img_partners:hover [src^="Images/p3.png"],
+.block4Img_partners:hover [src^="Images/p4.png"],
+.block5Img_partners:hover [src^="Images/p5.png"],
+.block6Img_partners:hover [src^="Images/p6.png"],
+.block7Img_partners:hover [src^="Images/p7.png"],
+.block8Img_partners:hover [src^="Images/p8.png"],
+.block9Img_partners:hover [src^="Images/p9.png"],
+.block10Img_partners:hover [src^="Images/p10.png"],
+[src^="Images/p1color.png"],
+[src^="Images/p2color.png"],
+[src^="Images/p3color.png"],
+[src^="Images/p4color.png"],
+[src^="Images/p5color.png"],
+[src^="Images/p6color.png"],
+[src^="Images/p7color.png"],
+[src^="Images/p8color.png"],
+[src^="Images/p9color.png"],
+[src^="Images/p10color.png"] {
+  display: none;
+  cursor: pointer;
+}
+
+.block1Img_partners:hover [src^="Images/p1color.png"],
+.block2Img_partners:hover [src^="Images/p2color.png"],
+.block3Img_partners:hover [src^="Images/p3color.png"],
+.block4Img_partners:hover [src^="Images/p4color.png"],
+.block5Img_partners:hover [src^="Images/p5color.png"],
+.block6Img_partners:hover [src^="Images/p6color.png"],
+.block7Img_partners:hover [src^="Images/p7color.png"],
+.block8Img_partners:hover [src^="Images/p8color.png"],
+.block9Img_partners:hover [src^="Images/p9color.png"],
+.block10Img_partners:hover [src^="Images/p10color.png"] {
+  display: inline-block !important;
+}
+
+.block4Img_partners [src^="Images/p4color.png"] {
+  max-width: 200px;
+}
+
 
 .prev-button1,
 .next-button1 {
@@ -1767,6 +1969,11 @@ a:hover {
   color: #F6A21E;
 }
 
+.block1_t1_footer {
+  max-width: 250px;
+  line-height: 25px;
+}
+
 .block1_t2_footer,
 .block1_t3_footer,
 .block1_t4_footer {
@@ -1845,15 +2052,16 @@ a:hover {
 }
 
 .block3_t6_footer img {
-  width: 80px;
-  padding-top: 6px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  max-height: 22px;
 }
 
 .block3_t6_footer a {
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: rgba(196, 196, 196, 0.3);
+  width: 80px;
+  height: 29px;
 }
 
 .block3_img1_footer,
@@ -1862,6 +2070,38 @@ a:hover {
   display: flex;
   flex-direction: row;
   grid-gap: 10px;
+}
+
+.block3_img1_footer [src^="Images/MasterCard_img.png"] {
+  padding-top: 3px;
+}
+
+.block3_img1_footer [src^="Images/Visa_img.png"] {
+  padding-top: 4px;
+  scale: 0.9;
+  opacity: 0.8;
+}
+
+.block3_img1_footer [src^="Images/VerifiedVisa_img.png"] {
+  scale: 0.9;
+}
+
+.block3_img2_footer [src^="Images/Belkart.png"] {
+  padding-top: 4px;
+  scale: 0.9;
+}
+
+.block3_img2_footer [src^="Images/Master.png"] {
+  scale: 0.9;
+}
+
+.block3_img3_footer [src^="Images/webpay_img.png"] {
+  padding-top: 3px;
+}
+
+.block3_img3_footer [src^="Images/Raschet.png"] {
+  scale: 1.1;
+  padding-top: 3px;
 }
 
 .downBlock_footer {
@@ -1875,6 +2115,18 @@ a:hover {
 
 .blockMob_footer {
   display: none;
+}
+
+.showNumber_footer:hover,
+.showEmail_footer:hover {
+  color: #F3BC28
+}
+
+.dogovor1_footer:hover,
+.dogovor2_footer:hover,
+.dogovor3_footer:hover {
+  text-decoration: none;
+  color: gray;
 }
 
 /*modal*/
@@ -1978,16 +2230,6 @@ a:hover {
 
 
 /*FOR MOBILE*/
-@media all and (min-width: 1400px) {
-  .imgBlock2_partners img:hover {
-    transition: all 0.3s ease;
-    transform: scale(1.2);
-    cursor: pointer;
-    background-color: rgba(52, 7, 56, 0.2);
-    ;
-    border-radius: 20px;
-  }
-}
 
 @media all and (max-width: 1279px) {
 
@@ -2109,10 +2351,6 @@ a:hover {
   .positionPhoto1_header,
   .positionPhoto2_header {
     font-size: 8px !important;
-  }
-
-  .textPhoto1_header {
-    margin-left: 30px !important;
   }
 
   .textPhoto2_header {
@@ -2288,6 +2526,16 @@ a:hover {
   }
 }
 
+@media all and (max-width: 739px) {
+  .blockPhoto_header {
+    margin-left: -65px !important;
+  }
+
+  .textPhoto1_header {
+    padding-left: 15px !important;
+  }
+}
+
 @media all and (max-width: 1600px) and (min-width: 740px) {
   .ballRight_header {
     width: 250px !important;
@@ -2298,6 +2546,8 @@ a:hover {
   .slider_header {
     margin-top: 30px !important;
     height: 100%;
+    padding-left: 10px !important;
+    padding-right: 0px !important;
   }
 }
 
@@ -2335,7 +2585,7 @@ a:hover {
 
   .blockPhoto_header {
     padding-top: 0 !important;
-    margin-left: -85px !important;
+    margin-left: -110px;
     height: 44px !important;
   }
 
@@ -2343,6 +2593,10 @@ a:hover {
   .textPhoto2_header {
     padding-top: 0 !important;
     margin-bottom: 0 !important;
+  }
+
+  .textPhoto1_header {
+    padding-left: 30px;
   }
 
   .namePhoto1_header,
@@ -2404,39 +2658,6 @@ a:hover {
     object-position: left bottom;
   }
 
-
-  .phoneSvg_header {
-    width: 40px;
-    height: 40px;
-    background-image: url(../SVG/icon_phone.svg);
-  }
-
-  .phoneSvg_header a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-  }
-
-  .phoneSvg_header~a {
-    display: none;
-  }
-
-  .emailSvg_header {
-    width: 40px;
-    height: 40px;
-    background-image: url(../SVG/icon_email.svg);
-  }
-
-  .emailSvg_header a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-  }
-
-  .emailSvg_header~a {
-    display: none;
-  }
-
   .downText_feedback {
     font-size: 16px !important;
   }
@@ -2444,9 +2665,17 @@ a:hover {
   .downText_feedback b {
     font-size: 20px !important;
   }
+
+  .fullText1_feedback,
+  .fullText2_feedback,
+  .fullText3_feedback,
+  .fullText4_feedback {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
-@media all and (min-width: 1600px) {
+@media all and (min-width: 1280px) {
   .phoneSvg_header {
     width: 20px;
     height: 20px;
@@ -2518,6 +2747,38 @@ a:hover {
     width: 40px;
     height: 40px;
   }
+
+  .phoneSvg_header {
+    width: 40px;
+    height: 40px;
+    background-image: url(../SVG/icon_phone.svg);
+  }
+
+  .phoneSvg_header a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .phoneSvg_header~a {
+    display: none;
+  }
+
+  .emailSvg_header {
+    width: 40px;
+    height: 40px;
+    background-image: url(../SVG/icon_email.svg);
+  }
+
+  .emailSvg_header a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .emailSvg_header~a {
+    display: none;
+  }
 }
 
 @media all and (min-width: 1280px) {
@@ -2543,11 +2804,6 @@ a:hover {
   }
 }
 
-@media all and (max-width: 340px) {
-  .scrollBlock_vidLogo {
-    height: 180px !important;
-  }
-}
 
 @media all and (max-width: 699px) {
   .feedback {
@@ -2596,7 +2852,7 @@ a:hover {
   }
 
   .prev-button {
-    right: 100px;
+    right: 60px;
   }
 
   .prev-button img {
@@ -2607,7 +2863,7 @@ a:hover {
   }
 
   .next-button {
-    right: 25px;
+    right: 10px;
   }
 
   .next-button img {
@@ -2624,6 +2880,48 @@ a:hover {
     margin-top: 30px !important;
     font-size: 14px;
     font-weight: 400;
+  }
+
+  .windowImg1_cases,
+  .windowImg2_cases,
+  .windowImg3_cases,
+  .windowImg4_cases,
+  .windowImg5_cases,
+  .windowImg6_cases,
+  .windowImg7_cases,
+  .windowImg8_cases,
+  .windowImg9_cases,
+  .windowImg10_cases,
+  .windowImg11_cases {
+    font-size: 8px !important;
+  }
+
+  .windowImg1_cases span,
+  .windowImg2_cases span,
+  .windowImg3_cases span,
+  .windowImg4_cases span,
+  .windowImg5_cases span,
+  .windowImg6_cases span,
+  .windowImg7_cases span,
+  .windowImg8_cases span,
+  .windowImg9_cases span,
+  .windowImg10_cases span,
+  .windowImg11_cases span {
+    padding-left: 10px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .windowImg2_cases span,
+  .windowImg3_cases span,
+  .windowImg4_cases span,
+  .windowImg5_cases span,
+  .windowImg7_cases span,
+  .windowImg8_cases span,
+  .windowImg10_cases span,
+  .windowImg11_cases span {
+    font-size: 6px !important;
+    padding-left: 5px !important;
+    padding-bottom: 10px !important;
   }
 
   .price {
@@ -2755,7 +3053,7 @@ a:hover {
 
   .downBlock1_team,
   .downBlock2_team,
-  downBlock3_team {
+  .downBlock3_team {
     height: 50px !important;
   }
 
@@ -2794,7 +3092,7 @@ a:hover {
   }
 
   .rightBlock_vidLogo {
-    margin-top: 20px !important;
+    margin-top: 140px !important;
   }
 
   .leftText1_vidLogo {
@@ -2812,10 +3110,6 @@ a:hover {
   .leftText3_vidLogo,
   .leftText4_vidLogo {
     font-size: 16px !important;
-  }
-
-  .scrollBlock_vidLogo {
-    height: 140px;
   }
 
   .partners {
@@ -2959,7 +3253,7 @@ a:hover {
   }
 
   .form {
-    height: 540px !important;
+    height: 510px !important;
     grid-template-columns: 1fr !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -2996,6 +3290,17 @@ a:hover {
     box-shadow: none !important;
     padding-left: 0px !important;
     padding-top: 0px !important;
+    justify-content: flex-start !important;
+  }
+
+  .first_name_form input,
+  .tel_form input,
+  .checkFull_form {
+    height: 20px !important;
+  }
+
+  .checkFull_form {
+    margin-top: 0px !important;
   }
 
   .rightText_form {
@@ -3014,12 +3319,15 @@ a:hover {
   }
 
   .submit_form {
-    margin-top: 15px !important;
+    margin-top: 35px !important;
     width: 175px !important;
     line-height: 30px !important;
     font-size: 14px !important;
   }
 
+  .form_form textarea {
+    height: 46px !important;
+  }
 
 
   .footer {
@@ -3085,16 +3393,48 @@ a:hover {
   }
 
   .blockMob_footer img {
-    width: 80px;
-    height: 30px;
-    padding-top: 6px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    max-height: 22px;
   }
 
   .blockMob_footer a {
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: rgba(196, 196, 196, 0.3);
+    width: 80px;
+    height: 29px;
+  }
+
+  .blockMob_img1_footer [src^="Images/MasterCard_img.png"] {
+    padding-top: 3px;
+  }
+
+  .blockMob_img1_footer [src^="Images/Visa_img.png"] {
+    padding-top: 4px;
+    scale: 0.9;
+    opacity: 0.8;
+  }
+
+  .blockMob_img1_footer [src^="Images/VerifiedVisa_img.png"] {
+    scale: 0.9;
+  }
+
+  .blockMob_img2_footer [src^="Images/Belkart.png"] {
+    padding-top: 4px;
+    scale: 0.9;
+  }
+
+  .blockMob_img2_footer [src^="Images/Master.png"] {
+    scale: 0.9;
+  }
+
+  .blockMob_img1_footer [src^="Images/webpay_img.png"] {
+    padding-top: 3px;
+  }
+
+  .blockMob_img2_footer [src^="Images/Raschet.png"] {
+    scale: 1.1;
+    padding-top: 3px;
   }
 
   .blockMob_img1_footer,
@@ -3111,7 +3451,7 @@ a:hover {
   }
 
   .vidLogo {
-    height: 630px !important;
+    height: 680px !important;
   }
 
   .vidLogo video {
@@ -3169,7 +3509,7 @@ a:hover {
   }
 
   .prev-button {
-    right: 100px;
+    right: 60px;
   }
 
   .prev-button img {
@@ -3180,7 +3520,7 @@ a:hover {
   }
 
   .next-button {
-    right: 25px;
+    right: 10px;
   }
 
   .next-button img {
@@ -3283,6 +3623,48 @@ a:hover {
     margin-right: 125px;
   }
 
+  .windowImg1_cases,
+  .windowImg2_cases,
+  .windowImg3_cases,
+  .windowImg4_cases,
+  .windowImg5_cases,
+  .windowImg6_cases,
+  .windowImg7_cases,
+  .windowImg8_cases,
+  .windowImg9_cases,
+  .windowImg10_cases,
+  .windowImg11_cases {
+    font-size: 10px !important;
+  }
+
+  .windowImg1_cases span,
+  .windowImg2_cases span,
+  .windowImg3_cases span,
+  .windowImg4_cases span,
+  .windowImg5_cases span,
+  .windowImg6_cases span,
+  .windowImg7_cases span,
+  .windowImg8_cases span,
+  .windowImg9_cases span,
+  .windowImg10_cases span,
+  .windowImg11_cases span {
+    padding-left: 10px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .windowImg2_cases span,
+  .windowImg3_cases span,
+  .windowImg4_cases span,
+  .windowImg5_cases span,
+  .windowImg7_cases span,
+  .windowImg8_cases span,
+  .windowImg10_cases span,
+  .windowImg11_cases span {
+    font-size: 6px !important;
+    padding-left: 5px !important;
+    padding-bottom: 10px !important;
+  }
+
   .team {
     height: 520px;
     padding-top: 80px !important;
@@ -3304,9 +3686,6 @@ a:hover {
     height: 370px !important;
   }
 
-  .scrollBlock_vidLogo {
-    height: 125px !important;
-  }
 
   .leftText1_vidLogo {
     font-size: 32px !important;
@@ -3325,6 +3704,9 @@ a:hover {
     font-size: 16px !important;
   }
 
+  .leftBlock_vidLogo {
+    grid-template-rows: 40fr 60fr !important;
+  }
 
   .partners {
     margin-top: -210px !important;
@@ -3553,16 +3935,48 @@ a:hover {
   }
 
   .blockMob_footer img {
-    width: 80px;
-    height: 30px;
-    padding-top: 6px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    max-height: 22px;
   }
 
   .blockMob_footer a {
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: rgba(196, 196, 196, 0.3);
+    width: 80px;
+    height: 29px;
+  }
+
+  .blockMob_img1_footer [src^="Images/MasterCard_img.png"] {
+    padding-top: 3px;
+  }
+
+  .blockMob_img1_footer [src^="Images/Visa_img.png"] {
+    padding-top: 4px;
+    scale: 0.9;
+    opacity: 0.8;
+  }
+
+  .blockMob_img1_footer [src^="Images/VerifiedVisa_img.png"] {
+    scale: 0.9;
+  }
+
+  .blockMob_img2_footer [src^="Images/Belkart.png"] {
+    padding-top: 4px;
+    scale: 0.9;
+  }
+
+  .blockMob_img2_footer [src^="Images/Master.png"] {
+    scale: 0.9;
+  }
+
+  .blockMob_img1_footer [src^="Images/webpay_img.png"] {
+    padding-top: 3px;
+  }
+
+  .blockMob_img2_footer [src^="Images/Raschet.png"] {
+    scale: 1.1;
+    padding-top: 3px;
   }
 
   .blockMob_img1_footer,
