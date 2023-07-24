@@ -222,8 +222,11 @@ a:hover {
 }
 
 .textBold_header:hover {
-  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px white;
 }
+
+
 
 .block1_header {
   width: 95px;
@@ -267,7 +270,7 @@ a:hover {
 /*block2_header*/
 .block2_header {
   display: grid;
-  grid-template-columns: 215px 14px;
+  grid-template-columns: 213px 14px;
   height: 40px;
 }
 
@@ -277,7 +280,8 @@ a:hover {
 }
 
 .block2_header:hover .textBold_header {
-  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px white;
   cursor: pointer;
 }
 
@@ -292,7 +296,6 @@ a:hover {
 .showContentInBlock2_header {
   display: none;
   width: 210px;
-  margin-top: 26px;
   background-color: #4D3F75;
   border-image-source: url(../Images/border-sub-menu-resersLeft.png);
   border-image-slice: 30 30 28 6;
@@ -309,7 +312,7 @@ a:hover {
 /*block3_header*/
 .block3_header {
   display: grid;
-  grid-template-columns: 175px 14px;
+  grid-template-columns: 171px 14px;
   height: 40px;
 }
 
@@ -320,14 +323,14 @@ a:hover {
 }
 
 .block3_header:hover .textBold_header {
-  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px white;
   cursor: pointer;
 }
 
 .showContentInBlock3_header {
   display: none;
   width: 220px;
-  margin-top: 26px;
   background-color: #4D3F75;
   border-image-source: url(../Images/border-sub-menu-resersLeft.png);
   border-image-slice: 30 30 28 6;
@@ -366,7 +369,7 @@ a:hover {
 /*block4_header*/
 .block4_header {
   display: grid;
-  grid-template-columns: 140px 14px;
+  grid-template-columns: 136px 14px;
   height: 40px;
 }
 
@@ -377,14 +380,14 @@ a:hover {
 }
 
 .block4_header:hover .textBold_header {
-  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px white;
   cursor: pointer;
 }
 
 .showContentInBlock4_header {
   display: none;
   width: 500px;
-  margin-top: 26px;
   background-color: #4D3F75;
   border-image-source: url(../Images/border-sub-menu-resersLeft.png);
   border-image-slice: 30 30 28 6;
@@ -439,7 +442,7 @@ a:hover {
 /*block6_header*/
 .block6_header {
   display: grid;
-  grid-template-columns: 160px 14px;
+  grid-template-columns: 158px 14px;
   height: 40px;
 }
 
@@ -450,7 +453,8 @@ a:hover {
 }
 
 .block6_header:hover .textBold_header {
-  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px white;
   cursor: pointer;
 }
 
@@ -473,7 +477,6 @@ a:hover {
 .showContentInBlock6_header {
   display: none;
   width: 490px;
-  margin-top: 26px;
   z-index: 1;
   background-color: #4D3F75;
   border-image-source: url(../Images/border-sub-menu-resers.png);
@@ -484,6 +487,7 @@ a:hover {
   padding-right: 40px;
   grid-gap: 30px;
   font-size: 14px;
+  padding-bottom: 20px;
 }
 
 .showBlock1_block6_header {
@@ -527,6 +531,21 @@ a:hover {
   display: none;
 }
 
+.block2_header,
+.block3_header,
+.block4_header,
+.block6_header {
+  position: relative;
+}
+
+.showContentInBlock2_header,
+.showContentInBlock3_header,
+.showContentInBlock4_header,
+.showContentInBlock6_header {
+  position: absolute;
+  left: -15px;
+  padding-top: 26px;
+}
 
 /*slider*/
 .slider_header {
@@ -1037,8 +1056,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
   border: 3px solid #583E7A
 }
@@ -1051,6 +1068,7 @@ a:hover {
   height: 90px;
   background-color: #D9D9D9;
   border-radius: 50%;
+  margin: 3px;
 }
 
 .name1_feedback,
@@ -1342,6 +1360,7 @@ a:hover {
   width: 100%;
   max-height: 360px;
   object-fit: contain;
+  object-position: right;
 }
 
 .topText_team {
@@ -1428,35 +1447,39 @@ a:hover {
 .slide4_vidlogo,
 .slide5_vidlogo {
   position: absolute;
-  animation: round 35s infinite;
+  animation: round 25s infinite;
   opacity: 0;
   width: 100%;
 }
 
 @keyframes round {
-  5% {
+  3% {
     opacity: 1
   }
 
-  30% {
+  16% {
+    opacity: 1
+  }
+
+  24% {
     opacity: 0
   }
 }
 
 .slide5_vidlogo {
-  animation-delay: 28s
+  animation-delay: 20s
 }
 
 .slide4_vidlogo {
-  animation-delay: 21s
+  animation-delay: 15s
 }
 
 .slide3_vidlogo {
-  animation-delay: 14s
+  animation-delay: 10s
 }
 
 .slide2_vidlogo {
-  animation-delay: 7s
+  animation-delay: 5s
 }
 
 .slide1_vidlogo {
@@ -2064,6 +2087,10 @@ a:hover {
   height: 29px;
 }
 
+.block3_img1_footer a:nth-child(3) {
+  background-color: transparent;
+}
+
 .block3_img1_footer,
 .block3_img2_footer,
 .block3_img3_footer {
@@ -2082,9 +2109,7 @@ a:hover {
   opacity: 0.8;
 }
 
-.block3_img1_footer [src^="Images/VerifiedVisa_img.png"] {
-  scale: 0.9;
-}
+.block3_img1_footer [src^="Images/VerifiedVisa_img.png"] {}
 
 .block3_img2_footer [src^="Images/Belkart.png"] {
   padding-top: 4px;
@@ -2308,6 +2333,7 @@ a:hover {
     padding-left: 5px !important;
     padding-right: 5px !important;
     padding-bottom: 20px !important;
+    padding-top: 15px !important;
     background-color: rgba(52, 7, 56, 1) !important;
   }
 
@@ -2441,7 +2467,7 @@ a:hover {
 @media all and (max-width: 599px) {
   .cases {
     height: 100% !important;
-    padding-top: 60px !important;
+    padding-top: 72px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
     padding-bottom: 20px !important;
@@ -2622,7 +2648,7 @@ a:hover {
 
   .leftSlide_header {
     height: 80% !important;
-    padding-top: 0px !important;
+    padding-top: 0px;
   }
 
   .rightSlide_header {
@@ -3113,7 +3139,7 @@ a:hover {
   }
 
   .partners {
-    margin-top: -210px !important;
+    margin-top: -195px !important;
     height: 680px !important;
     background-size: cover;
     position: relative;
@@ -3405,6 +3431,10 @@ a:hover {
     height: 29px;
   }
 
+  .blockMob_img1_footer a:nth-child(4) {
+    background-color: transparent;
+  }
+
   .blockMob_img1_footer [src^="Images/MasterCard_img.png"] {
     padding-top: 3px;
   }
@@ -3415,9 +3445,7 @@ a:hover {
     opacity: 0.8;
   }
 
-  .blockMob_img1_footer [src^="Images/VerifiedVisa_img.png"] {
-    scale: 0.9;
-  }
+  .blockMob_img1_footer [src^="Images/VerifiedVisa_img.png"] {}
 
   .blockMob_img2_footer [src^="Images/Belkart.png"] {
     padding-top: 4px;
@@ -3709,12 +3737,12 @@ a:hover {
   }
 
   .partners {
-    margin-top: -210px !important;
+    margin-top: -175px !important;
     height: 610px !important;
     background-size: cover;
     position: relative;
     background-position-x: center;
-    background-position-y: -50px;
+    background-position-y: -85px;
   }
 
   .imgTopBl_partners,
@@ -3947,6 +3975,10 @@ a:hover {
     height: 29px;
   }
 
+  .blockMob_img1_footer a:nth-child(4) {
+    background-color: transparent;
+  }
+
   .blockMob_img1_footer [src^="Images/MasterCard_img.png"] {
     padding-top: 3px;
   }
@@ -3957,9 +3989,7 @@ a:hover {
     opacity: 0.8;
   }
 
-  .blockMob_img1_footer [src^="Images/VerifiedVisa_img.png"] {
-    scale: 0.9;
-  }
+  .blockMob_img1_footer [src^="Images/VerifiedVisa_img.png"] {}
 
   .blockMob_img2_footer [src^="Images/Belkart.png"] {
     padding-top: 4px;
