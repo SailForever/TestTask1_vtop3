@@ -1406,7 +1406,7 @@ a:hover {
 .name1_team {
   display: grid;
   align-items: end;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
   font-size: calc(var(--size-mp) * 1.4);
   font-weight: 700;
   color: white;
@@ -2805,6 +2805,26 @@ a:hover {
   .emailSvg_header~a {
     display: none;
   }
+
+  .prof1_team,
+  .prof2_team,
+  .prof3_team {
+    border: 1px solid #F3BC28 !important;
+  }
+
+  .downBlock1_team {
+    border-top: 1px solid #F3BC28 !important;
+  }
+
+  .itemBlock1_price,
+  .itemBlock2_price,
+  .itemBlock3_price {
+    border: 1px solid #F3BC28;
+  }
+
+  .itemText3_price {
+    border: 1px solid #F3BC28;
+  }
 }
 
 @media all and (min-width: 1280px) {
@@ -2830,6 +2850,18 @@ a:hover {
   }
 }
 
+@media all and (max-width: 800px) {
+
+  .first_name_form input,
+  .tel_form input,
+  .checkFull_form {
+    height: 20px !important;
+  }
+
+  .check_form {
+    display: block;
+  }
+}
 
 @media all and (max-width: 699px) {
   .feedback {
@@ -3066,7 +3098,8 @@ a:hover {
 
 
   .team {
-    height: 1390px !important;
+    height: 100% !important;
+    padding-bottom: 25px;
     padding-top: 25px !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -3319,16 +3352,6 @@ a:hover {
     justify-content: flex-start !important;
   }
 
-  .first_name_form input,
-  .tel_form input,
-  .checkFull_form {
-    height: 20px !important;
-  }
-
-  .checkFull_form {
-    margin-top: 0px !important;
-  }
-
   .rightText_form {
     font-size: 20px !important;
   }
@@ -3474,10 +3497,6 @@ a:hover {
 }
 
 @media all and (max-width: 350px) {
-  .team {
-    height: 1000px !important;
-  }
-
   .vidLogo {
     height: 680px !important;
   }
@@ -3774,10 +3793,10 @@ a:hover {
 
   .imgBlock2_partners {
     flex-direction: row !important;
-    width: 400px !important;
+    width: 550px !important;
     grid-gap: 0px !important;
     display: block !important;
-    margin-top: 33px !important;
+    margin-top: 43px !important;
   }
 
   .prev-button1,
@@ -3791,7 +3810,7 @@ a:hover {
   }
 
   .prev-button1 {
-    left: 90px;
+    left: 25px;
   }
 
   .prev-button1 img {
@@ -3802,7 +3821,7 @@ a:hover {
   }
 
   .next-button1 {
-    right: 96px;
+    right: 25px;
   }
 
   .next-button1 img {

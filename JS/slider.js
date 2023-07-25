@@ -68,7 +68,7 @@ if (size1 <= 699) {
 }
 else {
   if(size1 >= 700 && size1 <= 1400 ){
-    slider1.style='display: grid; grid-template-columns: 200px 200px; grid-gap: 5%; grid-template-rows: 115px;';
+    slider1.style='display: grid; grid-template-columns: 1fr 1fr; grid-gap: 65px; grid-template-rows: 100px;';
     prevButton1.addEventListener('click', showPreviousSlide2);
     nextButton1.addEventListener('click', showNextSlide2);
     updateSlider2();
@@ -90,7 +90,7 @@ window.addEventListener('resize', function () {
   }
   else {
     if(resize1 >= 700 && resize1 <= 1400 ){
-      slider1.style='display: grid; grid-template-columns: 200px 200px; grid-gap: 5%; grid-template-rows: 115px;';
+      slider1.style='display: grid; grid-template-columns: 1fr 1fr; grid-gap: 65px; grid-template-rows: 100px;';
       prevButton1.removeEventListener('click', showPreviousSlide1);
       nextButton1.removeEventListener('click', showNextSlide1);
       prevButton1.addEventListener('click', showPreviousSlide2);
