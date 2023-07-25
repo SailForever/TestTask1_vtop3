@@ -2713,6 +2713,9 @@ a:hover {
     height: 14px;
     background-image: url(../SVG/mail_icon.svg);
   }
+  .mobile_header,.down_header {
+    margin-right: 160px !important;
+  }
 }
 
 @media all and (min-width: 1280px) and (max-width: 1576px) {
