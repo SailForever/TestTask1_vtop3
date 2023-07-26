@@ -8,7 +8,7 @@ const slideCount = slides.length;
 let slideIndex = 0;
 
 let size = window.innerWidth
-if (size < 1400) {
+if (size <= 1400) {
   prevButton.addEventListener('click', showPreviousSlide);
   nextButton.addEventListener('click', showNextSlide);
   updateSlider();
@@ -16,10 +16,17 @@ if (size < 1400) {
 
 window.addEventListener('resize', function () {
   let resize = window.innerWidth
-  if (resize < 1400) {
+  if (resize <= 1400) {
     prevButton.addEventListener('click', showPreviousSlide);
     nextButton.addEventListener('click', showNextSlide);
     updateSlider();
+  }
+  else {
+    if (resize>=1401) {
+      slides.forEach((slide, index) => {
+          slide.style.display = 'block';
+      });
+    }
   }
 });
 
