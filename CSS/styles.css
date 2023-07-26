@@ -1175,7 +1175,7 @@ a:hover {
   border-radius: 30px;
   border: 0;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   background: linear-gradient(#F1CA2D, #F6A21E);
 }
 
@@ -1290,7 +1290,7 @@ a:hover {
   border-radius: 30px;
   border: 0;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   background: linear-gradient(#F1CA2D, #F6A21E);
 }
 
@@ -1574,7 +1574,7 @@ a:hover {
   display: flex;
   align-items: center;
   flex-direction: row;
-  grid-gap: 90px;
+  grid-gap: 110px;
   margin-top: 40px;
 }
 
@@ -3086,6 +3086,7 @@ a:hover {
   .profileBlock_team {
     flex-direction: column !important;
     margin-top: 25px !important;
+    grid-gap: 20px !important;
   }
 
   .downBlock1_team,
@@ -3696,7 +3697,7 @@ a:hover {
   }
 
   .team {
-    padding-top: 80px !important;
+    padding-top: 60px !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
     padding-bottom: 50px;
