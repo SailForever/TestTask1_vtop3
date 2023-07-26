@@ -1934,6 +1934,7 @@ a:hover {
   align-content: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-feature-settings: 'lnum' on;
 }
 
 .topBlock_footer {
