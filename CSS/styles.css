@@ -1002,12 +1002,13 @@ a:hover {
 /*feedback*/
 .feedback {
   background-color: #340738;
-  height: 1180px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 100px;
 }
 
 .topFeed_feedback {
@@ -1152,7 +1153,8 @@ a:hover {
   max-width: 761px;
   font-size: 24px;
   font-weight: 400;
-  color: white
+  color: white;
+  width: 66%;
 }
 
 .downText_feedback b {
@@ -1187,11 +1189,12 @@ a:hover {
 .price {
   display: flex;
   flex-direction: column;
-  height: 1061px;
+  height: 100%;
   background-color: #583E7A;
   padding-top: 100px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 100px;
 }
 
 .textBlock_price {
@@ -1347,13 +1350,14 @@ a:hover {
 .team {
   display: flex;
   flex-direction: column;
-  height: 866px;
+  height: 100%;
   background-color: #5B1362;
   text-align: center;
   align-items: center;
   padding-top: 100px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 100px;
 }
 
 .team img {
@@ -1662,11 +1666,12 @@ a:hover {
 .other {
   display: flex;
   flex-direction: column;
-  height: 612px;
+  height: 100%;
   background-color: #340738;
   align-items: center;
   text-align: center;
   padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .ndash_other {
@@ -1927,9 +1932,10 @@ a:hover {
 
 /*footer*/
 .footer {
+  height: 100%;
+  grid-gap: 60px;
   display: flex;
   flex-direction: column;
-  height: 600px;
   background-color: #56295A;
   align-content: center;
   justify-content: space-between;
@@ -2370,23 +2376,13 @@ a:hover {
   }
 }
 
-@media all and (max-width: 960px) and (min-width: 700px) {
-  .team {
-    height: 385px !important;
-  }
-}
-
-@media all and (max-width: 800px) and (min-width: 600px) {
-  .cases {
-    height: 640px !important;
-  }
-}
 
 @media all and (max-width: 1279px) and (min-width: 600px) {
   .cases {
-    padding-top: 80px !important;
+    padding-top: 60px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
+    padding-bottom: 50px;
   }
 
   .cases img {
@@ -2444,7 +2440,7 @@ a:hover {
     padding-top: 72px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
-    padding-bottom: 20px !important;
+    padding-bottom: 25px !important;
   }
 
   .topText1_cases {
@@ -2845,10 +2841,10 @@ a:hover {
 @media all and (max-width: 699px) {
   .feedback {
     position: relative;
-    height: 1060px !important;
     padding-top: 25px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
+    padding-bottom: 30px;
   }
 
   .topFeedText1_feedback {
@@ -2960,18 +2956,21 @@ a:hover {
     padding-left: 5px !important;
     padding-bottom: 10px !important;
   }
-
+  .downText_feedback {
+    width: 100%;
+  }
   .price {
-    height: 1180px !important;
+    height: 100%;
     padding-top: 40px !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-bottom: 25px;
   }
 
   .itemsBlock_price {
     flex-direction: column !important;
     align-items: center;
-    height: 308px !important;
+    height: 100%;
   }
 
   .itemBlock1_price,
@@ -3009,9 +3008,9 @@ a:hover {
 
   .button_price {
     font-size: 14px !important;
-    width: 155px !important;
-    height: 50px !important;
-    line-height: 50px !important;
+    width: 145px !important;
+    height: 35px !important;
+    line-height: 36px !important;
     margin-top: 11px !important;
     margin-bottom: 11px !important;
     font-weight: 400 !important;
@@ -3262,10 +3261,10 @@ a:hover {
 
 
   .other {
-    height: 410px !important;
     padding-top: 25px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
+    padding-bottom: 30px;
     text-align: left;
   }
 
@@ -3373,7 +3372,7 @@ a:hover {
 
 
   .footer {
-    height: 1115px !important;
+    grid-gap: 30px;
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
@@ -3494,10 +3493,10 @@ a:hover {
 
   .feedback {
     position: relative;
-    height: 1015px !important;
     padding-top: 60px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
+    padding-bottom: 50px;
   }
 
   .topFeedText1_feedback {
@@ -3569,10 +3568,10 @@ a:hover {
   }
 
   .price {
-    height: 508px !important;
     padding-top: 50px !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-bottom: 50px;
   }
 
   .itemsBlock_price {
@@ -3697,14 +3696,15 @@ a:hover {
   }
 
   .team {
-    height: 520px;
     padding-top: 80px !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-bottom: 50px;
   }
 
   .topText_team {
     font-size: 32px !important;
+    width: 540px;
   }
 
   .name1_team,
@@ -3820,10 +3820,10 @@ a:hover {
   }
 
   .other {
-    height: 350px !important;
     padding-top: 25px !important;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
   }
 
   .topBlock_other {
@@ -3908,7 +3908,7 @@ a:hover {
   }
 
   .footer {
-    height: 630px !important;
+    grid-gap: 20px;
     padding-left: 65px !important;
     padding-right: 45px !important;
   }
